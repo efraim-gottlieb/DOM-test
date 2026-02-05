@@ -7,9 +7,6 @@ body {
 }
 
 button {
-  position: relative;
-  top: 80px;
-  left: 10px;
   padding: 15px 50px;
   color: #fff;
   background-color: #f4d35e;
@@ -19,6 +16,7 @@ button {
   box-shadow: 1px 3px #50514f;
   outline: none;
   transition: 0.3s;
+  margin: 1rem;
 }
 
 button:hover,
@@ -26,7 +24,7 @@ button:active {
   outline: none;
   background: #50514f;
   cursor: pointer;
-  transform: translateY(15px);
+  transform: translateY(5px);
 }
 
 .game {
@@ -60,12 +58,12 @@ button:active {
 }
 
 .dice-one {
-  position: absolute;
+  position: absolute; 
   left: 150px;
 }
 
 .dice-two {
-  position: absolute;
+  position: absolute; 
   left: -50px;
 }
 
@@ -185,7 +183,33 @@ button:active {
 }
 
 .player-card {
-  background-color: #fff;
+  background-color: #c96f6f;
   width: 10rem;
   height: 10rem;
+}
+.player {
+  border-radius: 1rem;
+  border: solid;
+  border-color: #02292b;
+  text-align: center;
+  font-size: 2.4rem;
+  padding: 1rem;
+}
+.player div {
+  font-size: 2rem;
+}
+
+.cur-player {
+  background-color: #f4d35e;
+}
+
+#pass {
+  display: block;
+}
+.won {
+  font-size: 8rem;
+}
+.goal {
+  font-size: 5rem;
+  text-align: center;
 }
