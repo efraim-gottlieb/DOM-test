@@ -3,7 +3,7 @@ const elDiceTwo = document.getElementById("dice2");
 const elComeOut = document.getElementById("roll");
 const players = document.querySelector(".players");
 let curPlayer;
-let goalScore = Math.floor(Math.random() * (50 - 50 + 1) + 50);
+let goalScore = Math.floor(Math.random() * (100 - 50 + 1) + 50);
 const goal = document.querySelector(".goal");
 goal.textContent = `Score: ${goalScore}`;
 const scoreStack = {
