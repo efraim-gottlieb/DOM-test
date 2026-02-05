@@ -3,16 +3,23 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #70c1b3;
+  background-color: #c3e7e1;
+}
+main {
+  padding: 2rem;
+  background-color: #b8fffb;
+  width: 60vw;
+  height: 80vh;
+  border-radius: 2rem;
 }
 
 button {
   padding: 15px 50px;
-  color: #fff;
-  background-color: #f4d35e;
+  color: #140c27;
+  background-color: #5ef477;
   border: none;
   font-size: 20px;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 1px 3px #50514f;
   outline: none;
   transition: 0.3s;
@@ -22,21 +29,24 @@ button {
 button:hover,
 button:active {
   outline: none;
-  background: #50514f;
+  background: #8fd449;
   cursor: pointer;
   transform: translateY(5px);
 }
 
 .game {
+  text-align: center;
   position: relative;
   width: auto;
   height: 100%;
 }
 
 .container {
+  text-align: center;
   position: relative;
   display: inline-block;
   top: 200px;
+  transform: translate(-5rem, 2rem);
 }
 
 .dice {
@@ -56,7 +66,6 @@ button:active {
   background-color: #f25f5c;
   box-shadow: inset 2px 2px #d90429;
 }
-
 .dice-one {
   position: absolute; 
   left: 150px;
@@ -178,7 +187,6 @@ button:active {
   padding: 1rem;
   display: flex;
   justify-content: space-around;
-  background-color: aquamarine;
   gap: 2rem;
 }
 
@@ -200,16 +208,14 @@ button:active {
 }
 
 .cur-player {
-  background-color: #f4d35e;
+  background-color: #94fd8a;
 }
 
-#pass {
-  display: block;
-}
 .won {
   font-size: 8rem;
 }
 .goal {
   font-size: 5rem;
   text-align: center;
+  color: #251952;
 }
