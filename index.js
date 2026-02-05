@@ -1,10 +1,11 @@
+const control = document.querySelector(".game");
 const elDiceOne = document.getElementById("dice1");
 const elDiceTwo = document.getElementById("dice2");
 const elComeOut = document.getElementById("roll");
 const players = document.querySelector(".players");
+const goal = document.querySelector(".goal");
 let curPlayer;
 let goalScore = Math.floor(Math.random() * (100 - 50 + 1) + 50);
-const goal = document.querySelector(".goal");
 goal.textContent = `Score: ${goalScore}`;
 const scoreStack = {
   "Player 1": 0,
@@ -79,7 +80,6 @@ function diaplayPlayers() {
   }
 }
 
-const control = document.querySelector(".game");
 const passButton = document.createElement("button");
 passButton.id = "pass";
 passButton.textContent = "Pass";
