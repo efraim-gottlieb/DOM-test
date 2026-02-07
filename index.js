@@ -51,7 +51,6 @@ function rollDice() {
   const b = elDiceTwo.classList[elDiceTwo.classList.length - 1];
   if (a == b) {
     scoreStack[curPlayer] = 0;
-    console.log(curPlayer);
     changePlayer();
   } else {
     scoreStack[curPlayer] += +a.at(-1) + +b.at(-1);
