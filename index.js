@@ -4,6 +4,7 @@ const elDiceTwo = document.getElementById("dice2");
 const elComeOut = document.getElementById("roll");
 const players = document.querySelector(".players");
 const goal = document.querySelector(".goal");
+
 let curPlayer;
 let goalScore = Math.floor(Math.random() * (100 - 50 + 1) + 50);
 goal.textContent = `Score: ${goalScore}`;
@@ -61,7 +62,13 @@ function rollDice() {
     const won = document.createElement("div");
     won.className = "won";
     won.textContent = `${curPlayer} won !!!`;
-    document.body.append(won);
+    const button = document.createElement("button");
+    button.id = "new-game";
+    button.textContent = "New Game";
+    document.body.append(won, button);
+    button.addEventListener("click", () => {
+      document.location.href = "index.html";
+    });
   }
 }
 
