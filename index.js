@@ -66,7 +66,7 @@ function rollDice() {
     button.textContent = "New Game";
     document.body.append(won, button);
     button.addEventListener("click", () => {
-      document.location.href = "index.html";
+      document.location.reload()
     });
   }
 }
